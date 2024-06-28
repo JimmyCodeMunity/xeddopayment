@@ -69,6 +69,8 @@ app.post("/confirmurl", async (req, res) => {
 app.post('/c2b-callback-results', (req, res) => {
     const callbackData = req.body;
     console.log('C2B Callback Data:', callbackData);
+    console.log("result code",callbackData.ResultCode)
+    console.log("description of transaction",callbackData.ResultDesc)
     res.status(200).send('Callback received');
 });
 

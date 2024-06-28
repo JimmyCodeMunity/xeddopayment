@@ -73,7 +73,7 @@ app.post('/c2b-callback-results', (req, res) => {
 });
 
 app.post("/request-payment", async (req, res) => {
-  getToken();
+  // getToken();
   try {
     const token = await getToken();
     const {
